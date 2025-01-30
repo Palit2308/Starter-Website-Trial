@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Choose Your Mood 😊</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container">
+        <h1 class="welcome-text">Tell me what do you want to see</h1>
+        <button id="seriousBtn">Show me something serious</button>
+        <button id="funBtn">I am in the mood for something fun!</button>
+    </div>
+
+    <script>
+        document.getElementById("seriousBtn").addEventListener("click", function() {
+            window.location.href = "serious.html"; // Redirects to serious.html
+        });
+
+        document.getElementById("funBtn").addEventListener("click", function() {
+            window.location.href = "fun.html"; // Redirects to serious.html
+        });
+    </script>
+</body>
+</html>

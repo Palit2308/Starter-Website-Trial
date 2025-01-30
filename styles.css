@@ -1,0 +1,112 @@
+/* General Styling */
+body {
+    text-align: center;
+    font-family: 'Dancing Script', cursive; /* Romantic font */
+    background: linear-gradient(to right, #ff9a9e, #fad0c4);
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+/* Container */
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+/* Image */
+.profile-pic {
+    width: 250px;
+    height: 250px;
+    object-fit: cover;
+    border-radius: 50%;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
+
+/* Welcome Text */
+.welcome-text {
+    font-size: 32px;
+    margin-top: 20px;
+    opacity: 0;
+    animation: fadeIn 3s ease-in-out forwards;
+}
+
+/* Button */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 20px;
+    border: none;
+    background: #ff5f6d;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 0; /* Initially hidden */
+}
+
+/* Button Hover */
+button:hover {
+    background: #ff416c;
+}
+
+/* Hidden Button */
+.hidden {
+    display: none;
+}
+
+/* Fade In Animation */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+
+.container {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* Button Styling */
+button {
+    margin-top: 20px;
+    padding: 12px 24px;
+    font-size: 18px;
+    border: none;
+    background: #ff5f6d;
+    color: white;
+    border-radius: 20px;
+    cursor: pointer;
+    transition: 0.3s ease-in-out;
+    opacity: 1; /* Ensure they are not hidden */
+    display: inline-block; /* Ensure they are visible */
+}
+
+/* Button Hover Effect */
+button:hover {
+    background: #ff416c;
+}
+
+/* Light Blue Background for Serious Page */
+.serious-page {
+    background: linear-gradient(to right, #E3F2FD, #BBDEFB); /* Light Blue Gradient */
+}
+
+/* Styling for the Fun Image */
+.fun-image {
+    width: 300px;  /* Adjust width */
+    height: auto;  /* Maintain aspect ratio */
+    border-radius: 20px;
+    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 2s ease-in-out;
+}
